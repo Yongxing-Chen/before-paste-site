@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Before Paste</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 680px; margin: 60px auto; padding: 0 24px; color: #1a1a1a; }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.1rem; margin-top: 2rem; }
+    p, li { color: #333; line-height: 1.7; }
+    a { color: #4a6cf7; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p><strong>Before Paste</strong> &mdash; Effective date: 2026-04-19</p>
+
+  <h2>What data the extension accesses</h2>
+  <p>When you copy text on a webpage, the extension reads:</p>
+  <ul>
+    <li>The selected text.</li>
+    <li>The current page's URL and title.</li>
+    <li>The URL and title of the page you most recently navigated from (within the same tab).</li>
+  </ul>
+
+  <h2>What data the extension stores</h2>
+  <p>Only your preferences (enabled/disabled toggle and denylist domains) are stored, in your local browser storage (<code>chrome.storage.local</code>). This data never leaves your device.</p>
+
+  <h2>What data the extension transmits</h2>
+  <p>None. The extension makes no network requests. No selected text, no URLs, and no usage data are ever sent to any server.</p>
+
+  <h2>Third parties</h2>
+  <p>The extension has no analytics, crash reporting, advertising, or any other third-party integrations.</p>
+
+  <h2>Permissions used</h2>
+  <ul>
+    <li><strong>storage</strong> — save your denylist and enabled flag locally.</li>
+    <li><strong>tabs / webNavigation</strong> — read the current tab's URL and title, and track navigation history within the tab, so the clipboard enrichment can include "Previously visited:" context.</li>
+    <li><strong>host_permissions (&lt;all_urls&gt;)</strong> — inject the copy listener on any webpage the user visits.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Questions? Open an issue at <a href="https://github.com/Yongxing-Chen/before_paste/issues">github.com/Yongxing-Chen/before_paste</a>.</p>
+
+  <p><a href="index.html">&larr; Back</a></p>
+</body>
+</html>
